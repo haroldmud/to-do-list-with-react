@@ -28,7 +28,7 @@ class InputToDo extends Component {
                 placeholder = 'Type task...'
                 onChange = {this.onChange}
          />
-         <button type='submit'>Add</button>
+         <button type='submit'>add</button>
       </form>
       );
     }

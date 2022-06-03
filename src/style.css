@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  justify-content: center;
+  margin: 0 auto;
+  width: 9rem;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  outline: none;
+  height: 2rem;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+button {
+  width: 5rem;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.theList {
+  border: black solid 2px;
+  width: 20rem;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+}
+
+ul li {
+  position: relative;
+  border: rgb(105, 141, 120) solid 3px;
+  width: 18rem;
+  margin-left: -30px;
+  height: 50px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+ul li span {
+  position: absolute;
+  top: 18px;
+}
+
+.linetrue {
+  text-decoration: line-through;
+}
+
+ul li button {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+  font-size: 10px;
+  width: 40px;
+  color: rgb(23, 24, 20);
+  background-color: rgba(105, 141, 120, 0.582);
+}

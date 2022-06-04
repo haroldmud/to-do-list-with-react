@@ -17,7 +17,38 @@ jobs:
       - name: Setup Webhint
         run: |
           npm install --save-dev hint@6.x
-          [ -f .hintrc ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.hintrc
+          [ -f .hintrc ] || wget https://raw.githubusercontent.com/mi￼
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+￼ 
+haroldmud
+/
+to-do-list-with-react
+Public
+generated from microverseinc/readme-template
+￼Pin
+ Unwatch 1 Fork 0
+￼ Star 0
+Code
+Issues
+Pull requests
+1
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+￼Edit
+ Code
+TODO LIST WITH REACT #1
+ Open
+haroldmud wants to merge 2 commits into dev from todolist
++8 −6 
+ Conversation 1croverseinc/linters-config/master/html-css-js/.hintrc
       - name: Webhint Report
         run: npx hint .
   webhint:

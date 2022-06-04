@@ -10,47 +10,14 @@ jobs:
     name: Lighthouse
     runs-on: ubuntu-18.04
     steps:
-- uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
-      - name: Setup Webhint
-        run: |
-          npm install --save-dev hint@6.x
-          [ -f .hintrc ] || wget https://raw.githubusercontent.com/mi￼
-Pull requests
-Issues
-Marketplace
-Explore
- 
-￼ 
-haroldmud
-/
-to-do-list-with-react
-Public
-generated from microverseinc/readme-template
-￼Pin
- Unwatch 1 Fork 0
-￼ Star 0
-Code
-Issues
-Pull requests
-1
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-￼Edit
- Code
-TODO LIST WITH REACT #1
- Open
-haroldmud wants to merge 2 commits into dev from todolist
-+8 −6 
- Conversation 1croverseinc/linters-config/master/html-css-js/.hintrc
-      - name: Webhint Report
-        run: npx hint .
+      - name: Setup Lighthouse
+        run: npm install -g @lhci/cli@0.7.x
+      - name: Lighthouse Report
+        run: lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=.
   webhint:
     name: Webhint
     runs-on: ubuntu-18.04
